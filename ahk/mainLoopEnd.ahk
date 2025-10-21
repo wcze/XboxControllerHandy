@@ -1,0 +1,3 @@
+    prevButtons := wButtons
+    Sleep, %PollInterval%
+}
