@@ -1,11 +1,23 @@
-; === 参数配置 ===
-PollInterval := 15
-LeftDeadzone := 8000
-RightDeadzone := 8000
-MaxMovePerPoll := 20
-ScrollScale := 1
-InitialDelay := 300
-RepeatInterval := 50
+; ==========================================
+; XboxControllerHandy 配置文件
+; 可调整手柄操作参数
+; ==========================================
+
+; === 手柄轮询与死区设置 ===
+PollInterval := 15          ; 手柄轮询间隔 (ms)
+LeftDeadzone := 8000        ; 左摇杆死区阈值
+RightDeadzone := 8000       ; 右摇杆死区阈值
+
+; === 鼠标移动设置 ===
+MaxMovePerPoll := 20        ; 左摇杆每轮最大移动像素（非精调模式）
+PrecisionSpeed := 2         ; 按住 X 键时精调模式移动速度
+
+; === 右摇杆滚动设置 ===
+ScrollScale := 1            ; 右摇杆滚动灵敏度
+
+; === D-Pad 自动重复设置 ===
+InitialDelay := 300         ; 按住后第一次重复前延迟 (ms)
+RepeatInterval := 50        ; 按住后重复间隔 (ms)
 
 ; === Xbox 按钮常量 ===
 XINPUT_GAMEPAD_DPAD_UP    := 0x0001
